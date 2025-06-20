@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Exercícios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        input, button {
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .resultado {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Verificar se o Número é Par ou Ímpar</h2>
+
+    <label for="numero">Digite um número inteiro:</label><br>
+    <input type="number" id="numero" placeholder="Ex: 7"><br>
+    <button onclick="verificarParOuImpar()">Verificar</button>
+
+    <div id="resultado" class="resultado"></div>
+
+    <script src="Lista Exercícios.js"></script>
+</body>
+</html>
+
+<!--Exercício 2-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Exercícios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        input, button {
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .resultado {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tabuada do Número</h2>
+
+    <label for="numero">Digite um número inteiro:</label><br>
+    <input type="number" id="numero" placeholder="Ex: 5"><br>
+    <button onclick="mostrarTabuada()">Mostrar Tabuada</button>
+
+    <div id="resultado" class="resultado"></div>
+
+    <script src="Lista Exercícios.js"></script>
+</body>
+</html>
+
+<!--Exercício 3-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Exercícios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        #numero {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Contador Interativo</h2>
+
+    <div id="numero">0</div>
+
+    <button onclick="aumentar()">Aumentar</button>
+    <button onclick="diminuir()">Diminuir</button>
+
+    <script src="Lista Exercícios.js"></script>
+</body>
+</html>
+
+
+<!--Exercício 4-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Exercícios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            text-align: center;
+        }
+        input, button {
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .resultado {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Jogo de Adivinhação</h2>
+    <p>Tente adivinhar um número de 1 a 10!</p>
+
+    <input type="number" id="palpite" placeholder="Digite seu palpite" min="1" max="10"><br>
+    <button id="btnVerificar">Verificar Palpite</button>
+
+    <div id="resultado" class="resultado"></div>
+
+    <script src="Lista Exercícios.js"></script>
+</body>
+</html>
+
+<!--Exercício 5-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lista de Exercícios</title>
+  <style>
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 10px; /* espaço entre botão e resultado */
+      margin-top: 10px;
+    }
+    #resultado {
+      font-weight: bold;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Média Escolar</h1>
+  <label>Nota 1: <input type="number" id="nota1" /></label><br />
+  <label>Nota 2: <input type="number" id="nota2" /></label><br />
+  <label>Nota 3: <input type="number" id="nota3" /></label><br />
+  
+  <div class="container">
+    <button onclick="calcularMedia()">Calcular Média</button>
+    <p id="resultado"></p>
+  </div>
+
+  <script src="Lista Exercícios.js"></script>
+</body>
+</html>
+
+
+<!--Exercício 6-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lista Exercícios</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    img {
+      width: 150px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Carolina Mendes</h1>
+  <img src="Carol.jpg" alt="Foto de Carolina" />
+  <p>Sou estudante.</p>
+  <h2>Hobbies</h2>
+  <ul>
+    <li>Leitura</li>
+    <li>Jogos</li>
+    <li>Filmes e séries</li>
+  </ul>
+</body>
+</html>
+
+<!--Exercício 7-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lista de Exercícios</title>
+</head>
+<body>
+  <h1>Formulário de Contato</h1>
+  <form id="contatoForm">
+    <label>Nome: <input type="text" id="nome" /></label><br /><br />
+    <label>Email: <input type="email" id="email" /></label><br /><br />
+    <label>Mensagem:<br />
+      <textarea id="mensagem" rows="5" cols="30"></textarea>
+    </label><br /><br />
+    <button type="submit">Enviar</button>
+  </form>
+  <p id="status"></p>
+
+  <script src="Lista Exercícios.js"></script>
+</body>
+</html>
+
+<!--Exercício 9-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Exercícios</title>
+    <script src="Lista Exercícios.js" defer></script>
+</head>
+<body>
+    <h2>Troque a Cor de Fundo</h2>
+    <button onclick="mudarCor()">Trocar Cor</button>
+</body>
+</html>
+
+
+<!--Exercício 10-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Exercícios</title>
+</head>
+<body>
+    <h2>Calculadora de IMC</h2>
+
+    <label>Peso (kg):</label><br>
+    <input type="number" id="peso" step="0.01"><br>
+
+    <label>Altura (m):</label><br>
+    <input type="number" id="altura" step="0.01"><br>
+
+    <button onclick="calcularIMC()">Calcular IMC</button>
+
+    <div id="resultado"></div>
+
+    <script src="Lista Exercícios.js"></script>
+</body>
+</html>
+
+<!--Exercício 11-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Exercícios</title>
+</head>
+<body>
+  <h2>Calculadora Básica</h2>
+  
+  <input type="number" id="num1" placeholder="Número 1">
+  <input type="number" id="num2" placeholder="Número 2"><br><br>
+
+  <button onclick="calcular('soma')">Somar</button>
+  <button onclick="calcular('subtracao')">Subtrair</button>
+  <button onclick="calcular('multiplicacao')">Multiplicar</button>
+  <button onclick="calcular('divisao')">Dividir</button>
+
+  <p id="resultado"></p>
+
+  <script src="Lista Exercícios.js"></script>
+</body>
+</html>
+
+<!--Exercício 12-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista Exercícios</title>
+</head>
+<body>
+  <h2>Qual a capital do Brasil?</h2>
+  <form>
+    <input type="radio" name="pergunta" value="errado"> Rio de Janeiro<br>
+    <input type="radio" name="pergunta" value="errado"> São Paulo<br>
+    <input type="radio" name="pergunta" value="certo"> Brasília<br>
+    <input type="radio" name="pergunta" value="errado"> Belo Horizonte<br><br>
+    <button type="button" onclick="verificarResposta()">Verificar Resposta</button>
+  </form>
+
+  <script src="Lista Exercícios.js"></script>
+</body>
+</html>
+
+<!--Exercício 13-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Exercícios</title>
+</head>
+<body>
+  <h2>Conversor de Temperatura</h2>
+  <input type="number" id="temp" placeholder="Digite a temperatura"><br><br>
+
+  <button onclick="converterParaF()">Converter para Fahrenheit</button>
+  <button onclick="converterParaC()">Converter para Celsius</button>
+
+  <p id="resultado"></p>
+
+  <script src="Lista Exercícios.js"></script>
+</body>
+</html>
+
+<!--Exercício 14-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Exercícios</title>
+</head>
+<body>
+  <h2>Digite seu nome:</h2>
+  <input type="text" id="nome" placeholder="Seu nome">
+  <button onclick="saudacao()">Saudar</button>
+
+  <script src="Lista Exercícios.js"></script>
+</body>
+</html>
+
+<!--Exercício 15-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Exercícios</title>
+</head>
+<body>
+  <h2>Cronômetro</h2>
+  <p id="cronometro">Tempo: 0s</p>
+
+  <button onclick="iniciar()">Iniciar</button>
+  <button onclick="pausar()">Pausar</button>
+  <button onclick="zerar()">Zerar</button>
+
+  <script src="Lista Exercícios.js"></script>
+</body>
+</html>
+
+<!--Exercício 16-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Exercícios</title>
+</head>
+<body>
+  <h2>Escolha uma cor para o fundo:</h2>
+  <input type="radio" name="cor" value="lightblue" onclick="mudarCor()"> Azul claro<br>
+  <input type="radio" name="cor" value="lightgreen" onclick="mudarCor()"> Verde claro<br>
+  <input type="radio" name="cor" value="lightyellow" onclick="mudarCor()"> Amarelo claro<br>
+  <input type="radio" name="cor" value="lightpink" onclick="mudarCor()"> Rosa claro<br>
+
+  <script src="Lista Exercícios.js"></script>
+</body>
+</html>
+
+<!--Exercício 17-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz de Matemática</title>
+</head>
+<body>
+  <h2>Quiz de Matemática</h2>
+
+  <form id="quizForm">
+    <p>1. Quanto é 5 + 3?</p>
+    <input type="radio" name="q1" value="errado"> 6<br>
+    <input type="radio" name="q1" value="certo"> 8<br>
+    <input type="radio" name="q1" value="errado"> 9<br><br>
+
+    <p>2. Quanto é 7 x 4?</p>
+    <input type="radio" name="q2" value="certo"> 28<br>
+    <input type="radio" name="q2" value="errado"> 21<br>
+    <input type="radio" name="q2" value="errado"> 24<br><br>
+
+    <button type="button" onclick="verificarRespostas()">Verificar</button>
+  </form>
+
+  <p id="resultado"></p>
+
+  <script src="quizMatematica.js"></script>
+</body>
+</html>
+
+<!--Exercício 18-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Exercícios</title>
+</head>
+<body>
+  <button id="btnCor">Clique para mudar de cor</button>
+
+  <script src="Lista de Exercícios.js"></script>
+</body>
+</html>
+
+
+<!--Exercício 19-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Exercícios</title>
+</head>
+<body>
+  <button id="btnContador">Clique aqui</button>
+  <p>Quantidade de cliques: <span id="contador">0</span></p>
+
+  <script src="Lista Exercícios.js"></script>
+</body>
+</html>
+
+<!--Exercício 20-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Exercícios</title>
+</head>
+<body>
+  <p id="textoHover">Passe o mouse aqui!</p>
+
+  <script src="Lista Exercícios.js"></script>
+</body>
+</html>
+
+
+<!--Exercício 21-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Exercícios</title>
+</head>
+<body>
+  <h2>Digite algo:</h2>
+  <input type="text" id="inputTecla">
+  <p>Última tecla: <span id="teclaPressionada"></span></p>
+
+  <script src="Lista Exercícios.js"></script>
+</body>
+</html>
+
+<!--Exercício 22-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Parágrafo com Duplo Clique</title>
+</head>
+<body>
+  <p id="paragrafo">Dê um duplo clique neste texto para me esconder.</p>
+
+  <script src="paragrafoDuploClique.js"></script>
+</body>
+</html>
+
+<!--Exercício 23-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Exercícios</title>
+</head>
+<body>
+  <input type="checkbox" id="checkPermissao"> Aceito os termos<br><br>
+  <button id="btnEnviar" disabled>Enviar</button>
+
+  <script src="Lista de Exercícios.js"></script>
+</body>
+</html>
